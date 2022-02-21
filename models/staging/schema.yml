@@ -6,8 +6,9 @@ sources:
       schema: trips_data_all
 
       tables:
-        - name: green_tripdata
-        - name: yellow_tripdata
+        - name: green_tripdata_partitioned
+        - name: yellow_tripdata_partitioned
+        - name: fhv_tripdata_partitioned
 
 models:
     - name: stg_green_tripdata
@@ -28,8 +29,8 @@ models:
           - name: VendorID 
             description: > 
                 A code indicating the TPEP provider that provided the record.
-                1= Creative Mobile Technologies, LLC; 
-                2= VeriFone Inc.
+                1 = Creative Mobile Technologies, LLC; 
+                2 = VeriFone Inc.
           - name: pickup_datetime 
             description: The date and time when the meter was engaged.
           - name: dropoff_datetime 
@@ -54,19 +55,19 @@ models:
           - name: RateCodeID 
             description: >
                 The final rate code in effect at the end of the trip.
-                  1= Standard rate
-                  2=JFK
-                  3=Newark
-                  4=Nassau or Westchester
-                  5=Negotiated fare
-                  6=Group ride
+                  1 = Standard rate
+                  2 = JFK
+                  3 = Newark
+                  4 = Nassau or Westchester
+                  5 = Negotiated fare
+                  6 = Group ride
           - name: Store_and_fwd_flag 
             description: > 
               This flag indicates whether the trip record was held in vehicle
               memory before sending to the vendor, aka “store and forward,”
               because the vehicle did not have a connection to the server.
-                Y= store and forward trip
-                N= not a store and forward trip
+                Y = store and forward trip
+                N = not a store and forward trip
           - name: Dropoff_longitude 
             description: Longitude where the meter was disengaged.
           - name: Dropoff_latitude 
@@ -119,8 +120,8 @@ models:
           - name: VendorID 
             description: > 
                 A code indicating the TPEP provider that provided the record.
-                1= Creative Mobile Technologies, LLC; 
-                2= VeriFone Inc.
+                1 = Creative Mobile Technologies, LLC; 
+                2 = VeriFone Inc.
           - name: pickup_datetime 
             description: The date and time when the meter was engaged.
           - name: dropoff_datetime 
@@ -146,19 +147,19 @@ models:
           - name: RateCodeID 
             description: >
                 The final rate code in effect at the end of the trip.
-                  1= Standard rate
-                  2=JFK
-                  3=Newark
-                  4=Nassau or Westchester
-                  5=Negotiated fare
-                  6=Group ride
+                  1 = Standard rate
+                  2 = JFK
+                  3 = Newark
+                  4 = Nassau or Westchester
+                  5 = Negotiated fare
+                  6 = Group ride
           - name: Store_and_fwd_flag 
             description: > 
               This flag indicates whether the trip record was held in vehicle
               memory before sending to the vendor, aka “store and forward,”
               because the vehicle did not have a connection to the server.
-                Y= store and forward trip
-                N= not a store and forward trip
+                Y = store and forward trip
+                N = not a store and forward trip
           - name: Dropoff_longitude 
             description: Longitude where the meter was disengaged.
           - name: Dropoff_latitude 
