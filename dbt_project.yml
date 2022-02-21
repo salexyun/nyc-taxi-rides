@@ -1,4 +1,3 @@
-
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
@@ -41,7 +40,7 @@ vars:
   payment_type_values: [1, 2, 3, 4, 5, 6]
 
 seeds: 
-    taxi_rides_ny:
+    nyc_taxi_rides:
         taxi_zone_lookup:
             +column_types:
                 locationid: numeric
